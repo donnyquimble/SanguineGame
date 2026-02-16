@@ -1,0 +1,18 @@
+In order to create an interface that a player or AI could use to control the game, we'd have
+to make a controller.
+
+Our controller class would take in a readable and appendable, and use these to play the game.
+
+It would run the appendable (which would be a list of the user's commands) through a 'playgame' function,
+which would contain a switch case containing various commands needed to play the game.
+
+Commands (x = number):
+P - Pass your turn
+MC X X - Move a card from your hand to a row and column.
+
+
+It would cycle through the appendable, playing out the commands, until both players pass their turn,
+in which case the game would end.
+
+When we create an AI, the strategy it would implement would be checking each board space to determine
+which one would have the most influence if a specific card was placed upon it.
